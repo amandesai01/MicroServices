@@ -6,8 +6,8 @@
 
 #### Example usage:
 
-*   [base_url]/api/whoami
-*   [base_url]
+*   https://reqheader-microservice-mrwinsome.glitch.me//api/whoami
+*   https://reqheader-microservice-mrwinsome.glitch.me/
 
 #### Example output:
 
