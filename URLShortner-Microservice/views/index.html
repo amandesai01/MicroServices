@@ -21,7 +21,7 @@
     <h3 id="details">Details</h3>
     
     <ol>
-    <li>I can POST a URL to <code>[project_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON response. Example : <code>{"original_url":"www.google.com","short_url":1}</code></li>
+    <li>I can POST a URL to <code>https://shorturl-microservice-mrwinsome.glitch.me/api/shorturl/new</code> and I will receive a shortened URL in the JSON response. Example : <code>{"original_url":"www.google.com","short_url":1}</code></li>
     
     <li>If I pass an invalid URL that doesn't follow the valid <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error":"invalid URL"}</code>. <em>HINT</em>: to be sure that the submitted url points to a valid site you can use the function <code>dns.lookup(host, cb)</code> from the <code>dns</code> core module.</li>
     
@@ -30,7 +30,7 @@
     
     <h4 id="creationexample">Creation Example:</h4>
     
-    <p><code>POST [project_url]/api/shorturl/new - body (urlencoded) :  url=https://amandesai01.github.io</code></p>
+    <p><code>POST https://shorturl-microservice-mrwinsome.glitch.me/api/shorturl/new - body (urlencoded) :  url=https://amandesai01.github.io</code></p>
     
     <h4 id="usage">Usage:</h4>
     
