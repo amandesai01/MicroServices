@@ -15,7 +15,7 @@ Then, run server.js
 
 #### Creation Example:
 
-`POST [project_url]/api/shorturl/new - body (urlencoded) :  url=https://amandesai01.github.io`
+`POST https://shorturl-microservice-mrwinsome.glitch.me/api/shorturl/new - body (urlencoded) :  url=https://amandesai01.github.io`
 
 #### Usage:
 
