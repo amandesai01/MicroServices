@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            padding-left: 25%;
+            padding-right: 25%;
+            padding-top: 5%;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="urlshortenermicroservice">URL Shortener Microservice</h1>
+
+    <h3 id="details">Details</h3>
+    
+    <ol>
+    <li>I can POST a URL to <code>[project_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON response. Example : <code>{"original_url":"www.google.com","short_url":1}</code></li>
+    
+    <li>If I pass an invalid URL that doesn't follow the valid <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error":"invalid URL"}</code>. <em>HINT</em>: to be sure that the submitted url points to a valid site you can use the function <code>dns.lookup(host, cb)</code> from the <code>dns</code> core module.</li>
+    
+    <li>When I visit the shortened URL, it will redirect me to my original link.</li>
+    </ol>
+    
+    <h4 id="creationexample">Creation Example:</h4>
+    
+    <p><code>POST [project_url]/api/shorturl/new - body (urlencoded) :  url=https://amandesai01.github.io</code></p>
+    
+    <h4 id="usage">Usage:</h4>
+    
+    <p>[this<em>project</em>url]/api/shorturl/3</p>
+    
+    <h4 id="willredirectto">Will redirect to:</h4>
+    
+    <p>https://amandesai01.github.io</p>
+  </body>
+</html>
